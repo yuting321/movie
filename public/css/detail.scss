@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: iconfont;
+}
+a{
+  text-decoration: none;
+}
+a:active{
+  color: #4c4c4c;
+}
+a:link{
+  color: #4c4c4c;
+}
+a:visited{
+  color: #4c4c4c;
+}
+@mixin rem16{
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+@mixin rem14{
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+.head{
+  width: 100%;
+  height: 35px;
+  @include rem16;
+  text-align:center;
+  line-height: 35px;
+  position: relative;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 1000;
+  background-color: white;
+  //display: none;
+  .font2{
+    width: 20%;
+    height: 35px;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .return2{
+    color:#4c4c4c;
+    position: absolute;
+    left: 0;
+    top:0;
+    font-size: 20px;
+    font-size: 2.0rem;
+    width: 8%;
+    height: 100%;
+    line-height: 35px;
+    text-align: right;
+  }
+  .sign-up2{
+    color:#4c4c4c;
+    width: 10%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 20px;
+    font-size: 2.0rem;
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+}
+header {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  position: relative;
+  .title {
+    color: white;
+    .return {
+      position: absolute;
+      left: 3%;
+      top: 17px;
+      background: rgba(124,124,124,0.1);
+      font-size: 18px;
+      font-size: 1.8rem;
+      width: 7%;
+      height: 28px;
+      border-radius: 50px;
+      line-height: 28px;
+      text-align: center;
+    }
+    .sign-up {
+      width: 7%;
+      height: 28px;
+      border-radius: 50px;
+      line-height: 28px;
+      text-align: center;
+      background: rgba(124,124,124,0.1);
+      font-size: 18px;
+      font-size: 1.8rem;
+      position: absolute;
+      right: 3%;
+      top: 17px;
+    }
+  }
+  .score{
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    left: 35%;
+    bottom: 0;
+    p{
+      font-size: 18px;
+      font-size: 1.8rem;
+      color: black;
+    }
+    .tit{color: white;
+    }
+    .like{
+      color: #feaf48;
+    }
+  }
+  .desc{
+    width: 40%;
+    height: 60px;
+    position: absolute;
+    left: 35%;
+    bottom: -60px;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+.pic{
+  width: 25%;
+  height: 150px;
+  margin-left: 3%;
+  position: absolute;
+  left: 3%;
+  overflow: hidden;
+  top:160px;
+}
+.detail{
+  width: 100%;
+  height: 90px;
+  line-height: 22px;
+  overflow: hidden;
+  margin-top: 60px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #686868;
+}
+.more{
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  @include rem16();
+  color: #686868;
+}
+.space{
+  width: 100%;
+  height: 10px;
+  background: #efefef;
+}
+.actor{
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  p{
+    float: left;
+    @include rem14();
+  }
+  div{
+    width: 5%;
+    height: 100%;
+    float: right;
+    @include rem16();
+  }
+}
+ul{
+  width: 100%;
+  height: 150px;
+   li{
+     list-style: none;
+     width: 19.6%;
+     height: 100%;
+     float: left;
+     margin-right:1px;
+     p{
+       overflow: hidden;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+       color: #686868;
+     }
+   }
+}
+footer{
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  left: 0;
+  bottom:0;
+  .fav{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+    @include rem16();
+    color: #686868;
+  }
+  .comm{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+    @include rem16();
+    color: #686868;
+  }
+  .sel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: #fec22c;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-size: 2.0rem;
+  }
+  .icon{
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+}
+

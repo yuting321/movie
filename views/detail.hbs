@@ -1,0 +1,103 @@
+<script type="text/javascript">
+    document.title = '电影详情 | 咪咕电影';
+</script>
+
+<link href="css/detail.css" rel="stylesheet">
+<link rel="stylesheet" href="icon/iconfont.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="icon/iconfont.js"></script>
+<script src="js/detail.js"></script>
+
+<div class="head">
+    <div class="return2"><a href="list">&#xe71b;</a></div>
+    <div class="font2">新木乃伊</div>
+    <div class="sign-up2">&#xe665;</div>
+</div>
+{{#each val}}
+<header style="background-image: url({{this.post}})">
+    <div class="title">
+        <div class="return"><a href="list">&#xe71b;</a></div>
+        <div class="sign-up">&#xe665;</div>
+    </div>
+    <div class="pic"><img src="{{this.src}}" width="100%"></div>
+    <div class="score">
+        <p class="tit">{{this.title}}</p>
+        <p class="like"><span>&#xe63e;</span><span>&#xe63e;</span><span>&#xe63e;</span><span>&#xe63e;</span><span>&#xe63e;</span>
+            <span class="key"> 6.9</span></p>
+    </div>
+    <div class="desc">
+        <p>{{this.type}}</p>
+        <p>{{this.country}}</p>
+        <p>{{this.showtime}}</p>
+    </div>
+</header>
+<div class="detail">
+    <p> &nbsp;&nbsp;{{this.desc}}
+    </p>
+</div>
+{{/each}}
+<div class="more">&#xe621;</div>
+<div class="space"></div>
+<div class="actor">
+    <p>演职人员</p>
+    <div class="more2">&#xe77b;</div>
+</div>
+<ul>
+    <li><img src="images/actor1.jpg" width="100%">
+        <p>艾利克斯.库兹曼</p>
+        <p>导演</p>
+    </li>
+    <li><img src="images/actor2.jpg" width="100%">
+        <p>罗素.克劳</p>
+        <p>主演</p>
+    </li>
+    <li><img src="images/actor3.jpg" width="100%">
+        <p>考特尼.万斯</p>
+        <p>演员</p>
+    </li>
+    <li><img src="images/actor4.jpg" width="100%">
+        <p>艾利克斯.库兹曼</p>
+        <p>导演</p>
+    </li>
+    <li><img src="images/actor4.jpg" width="100%">
+        <p>艾利克斯.库兹曼</p>
+        <p>导演</p>
+    </li>
+</ul>
+<div class="actor">
+    <p>演职人员</p>
+    <div class="more2">&#xe77b;</div>
+</div>
+<ul>
+    <li><img src="images/actor1.jpg" width="100%">
+        <p>艾利克斯.库兹曼</p>
+        <p>导演</p>
+    </li>
+    <li><img src="images/actor2.jpg" width="100%">
+        <p>罗素.克劳</p>
+        <p>主演</p>
+    </li>
+    <li><img src="images/actor3.jpg" width="100%">
+        <p>考特尼.万斯</p>
+        <p>演员</p>
+    </li>
+    <li><img src="images/actor4.jpg" width="100%">
+        <p>艾利克斯.库兹曼</p>
+        <p>导演</p>
+    </li>
+    <li><img src="images/actor3.jpg" width="100%">
+        <p>艾利克斯.库兹曼</p>
+        <p>导演</p>
+    </li>
+</ul>
+<footer>
+    <div class="fav">
+        <span class="icon">&#xe63e;</span>&nbsp;
+        <span>收藏</span>
+    </div>
+    <div class="comm">
+        <span class="icon">&#xe668;</span>&nbsp;
+        <span>写影评</span>
+    </div>
+    <div class="sel">选座购买</div>
+</footer>

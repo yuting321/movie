@@ -1,0 +1,63 @@
+<script type="text/javascript">
+    document.title = '电影列表 | 咪咕电影';
+</script>
+<link href="css/list.css" rel="stylesheet">
+<link rel="stylesheet" href="icon/iconfont.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="icon/iconfont.js"></script>
+<script src="js/list.js"></script>
+
+<header>
+    <div class="pos">南京 <span>&#xe621;</span></div>
+    <div class="cagroy">
+        <div class=" list1 hover">影片</div>
+        <div class="list2">影院</div>
+    </div>
+</header>
+<div class="show">
+    <div class="h">正在热映</div>
+    <div >即将上映</div>
+</div>
+<div class="ppt">
+    <div class="all">
+        <div class="pic"><img src="images/1.png" width="100%"> </div>
+        <div class="pic"><img src="images/2.png" width="100%"> </div>
+        <div class="pic"><img src="images/3.png" width="100%"> </div>
+    </div>
+</div>
+{{#each val}}
+<div class="list">
+    <div class="num">{{this.id}}</div>
+    <div class="list-left">
+        <div class="src"><img src={{this.src}} width="100%"> </div>
+    </div>
+    <div class="list-right">
+        <br>
+        <p class="title">{{this.title}}</p>
+        <div class="detail">
+            <p>{{this.director}}</p>
+            <p>{{this.actor}}</p>
+        </div>
+        <div class="input"><a href="area">购票</a></div>
+
+    </div>
+</div>
+{{/each}}
+<div class="foot-nav">
+    <div class="nav">
+        <p class="icon">&#xe601;</p>
+        <p>看片</p>
+    </div>
+    <div class="nav2 click">
+        <p class="icon">&#xe64f;</p>
+        <p>购票</p>
+    </div>
+    <div class="nav3">
+        <p class="icon3">&#xe600;</p>
+        <p>发现</p>
+    </div>
+    <div class="nav4">
+        <p class="icon">&#xe626;</p>
+        <p><a href="personal">我的</a></p>
+    </div>
+</div>
